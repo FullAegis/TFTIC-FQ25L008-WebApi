@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BookManager.BLL">
+      <HintPath>..\BookManager.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="BookManager.DAL">
+      <HintPath>..\BookManager.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="BookManager.DB">
+      <HintPath>..\BookManager.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="BookManager.Entities">
+      <HintPath>..\BookManager.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
