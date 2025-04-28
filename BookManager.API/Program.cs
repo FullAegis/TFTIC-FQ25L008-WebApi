@@ -42,7 +42,6 @@ namespace BookManager.API
 
 
             app.MapControllers();
-
             app.Run();
         }
     }
